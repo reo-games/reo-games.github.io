@@ -9,89 +9,154 @@
   * { box-sizing: border-box; } body { margin: 0; word-break: keep-all; overflow-wrap: break-word; background: var(--bg); color: var(--fg); font: 16px/1.75 system-ui, -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; }
   main { max-width: 720px; margin: 0 auto; padding: 40px 20px 64px; } h1 { font-size: 26px; margin: 0; } h2 { font-size: 19px; margin: 32px 0 6px; } h3 { font-size: 16px; margin: 20px 0 4px; }
   .meta { color: var(--muted); font-size: 14px; } hr { border: 0; border-top: 1px solid var(--line); margin: 48px 0; } a { color: #7fd8ff; } li { margin: 4px 0; }
+  .tbl { overflow-x: auto; } table { border-collapse: collapse; width: 100%; font-size: 14px; line-height: 1.6; } th, td { border: 1px solid var(--line); padding: 6px 8px; text-align: left; vertical-align: top; } th { color: var(--muted); font-weight: 600; }
 </style>
 </head>
 <body>
 <main>
 <h1>은하열차 수비대 개인정보처리방침</h1>
-<p class="meta">시행일: 2026년 11월 5일 · 개발자: reo-games</p>
+<p class="meta">시행일: 2026년 11월 8일 · 개발자: reo-games</p>
 
-<p>reo-games(이하 "개발자")는 모바일 게임 「은하열차 수비대」(이하 "게임", 패키지 com.reogames.galaxytrain)를 이용하는 분의 개인정보를 소중히 다룹니다. 이 방침은 게임이 어떤 정보를 다루는지 알려 드립니다.</p>
+<p>reo-games(이하 "개발자")는 모바일 게임 「은하열차 수비대」(이하 "게임", 패키지 com.reogames.galaxytrain)를 이용하는 분의 개인정보를 소중히 다룹니다. 이 방침은 게임이 어떤 정보를 어떻게 다루는지 알려 드립니다.</p>
 
-<h2>1. 수집하는 개인정보</h2>
-<p>게임은 <b>이름, 이메일, 전화번호, 위치 같은 개인정보를 수집하지 않으며, 개발자의 서버로 어떤 정보도 보내지 않습니다.</b> 회원가입이나 로그인도 없습니다.</p>
-
-<h2>2. 기기 안에만 저장되는 정보</h2>
+<h2>1. 요약</h2>
 <ul>
-  <li><b>게임 진행 기록</b>: 골드·보석·업그레이드·업적·설정·열차 이름 등. 이용자의 기기 안(앱 저장 공간)에만 저장됩니다.</li>
-  <li><b>플레이어 ID</b>: 게임을 처음 켤 때 기기에서 무작위로 만드는 식별 문자열입니다. 개인을 알아볼 수 있는 정보와 연결되지 않으며, 문의할 때 이용자가 직접 알려 주는 경우에만 쓰입니다.</li>
-</ul>
-<p>앱을 삭제하면 이 정보도 함께 지워집니다.</p>
-
-<h2>3. 기기 백업</h2>
-<p>Android의 자동 백업 기능이 켜져 있으면, 게임 진행 기록이 이용자 본인의 Google 계정 백업에 포함되어 기기를 바꿀 때 복원될 수 있습니다. 이 백업은 Google이 이용자 계정에 보관하며 개발자는 볼 수 없습니다. 기기 설정에서 백업을 끌 수 있습니다.</p>
-
-<h2>4. 외부 서비스</h2>
-<ul>
-  <li><b>Google Fonts</b>: 게임 글꼴을 Google Fonts(fonts.googleapis.com, fonts.gstatic.com)에서 불러옵니다. 이 과정에서 기기의 IP 주소 등 일반적인 접속 정보가 Google에 전달될 수 있습니다. 자세한 내용은 <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>을 참고하세요.</li>
-</ul>
-<p>현재 게임에는 <b>광고와 인앱 결제가 없습니다.</b> 앞으로 광고(예: Google AdMob)나 결제(Google Play 결제)를 넣게 되면, 그 전에 이 방침을 고치고 앱 안에서 알려 드립니다.</p>
-
-<h2>5. 앱 권한</h2>
-<ul>
-  <li><b>인터넷</b>: 글꼴을 불러오는 데 씁니다.</li>
-  <li><b>진동</b>: 게임 효과(진동)에 씁니다. 게임 설정에서 끌 수 있습니다.</li>
+  <li>게임은 <b>이름, 이메일, 전화번호, 정확한 위치를 수집하지 않으며</b>, 회원가입이 없습니다. 개발자는 자체 서버를 운영하지 않습니다.</li>
+  <li>게임 진행 기록은 기본적으로 <b>이용자의 기기</b>에 저장되고, Google Play 게임즈에 로그인하면 <b>이용자 본인의 Google 계정</b>에도 저장됩니다.</li>
+  <li>게임 운영과 개선을 위해 <b>Google의 서비스</b>(광고 AdMob, 분석 Firebase Analytics, 오류 보고 Firebase Crashlytics, Google Play 게임즈)를 씁니다. 이 서비스들은 기기 식별자 등 아래에 적은 정보를 처리합니다.</li>
 </ul>
 
-<h2>6. 아동</h2>
-<p>게임은 개인정보를 수집하지 않으므로 만 14세 미만 아동의 개인정보도 수집하지 않습니다.</p>
+<h2>2. 처리하는 정보와 목적</h2>
+<div class="tbl"><table>
+  <tr><th>정보</th><th>목적</th><th>처리하는 곳</th></tr>
+  <tr><td>게임 진행 기록 (골드·보석·업그레이드·업적·임무·설정·열차 이름), 무작위 플레이어 ID</td><td>게임 진행 저장, 문의 대응 (플레이어 ID는 이용자가 직접 알려 줄 때만 씀)</td><td>이용자 기기. Play 게임즈 로그인 시 이용자 Google 계정의 게임 저장 공간</td></tr>
+  <tr><td>Google Play 게임즈 플레이어 ID·표시 이름</td><td>로그인, 기기를 바꿔도 이어서 하기 (클라우드 저장)</td><td>Google (Play 게임즈 서비스)</td></tr>
+  <tr><td>광고 ID, 기기·OS 정보, IP 주소, 광고 노출·클릭 기록</td><td>보상형 광고 표시, 광고 성과 측정, 부정 클릭 방지 (이용자 동의 시 맞춤 광고)</td><td>Google (AdMob)</td></tr>
+  <tr><td>앱 인스턴스 ID, 기기 모델·OS·언어, 대략적인 국가(IP 기준), 앱 사용 기록 (설치·실행·사용 시간, 판 시작·끝, 해금, 강화, 광고 보상, 임무 보상 같은 게임 이벤트)</td><td>이용 통계, 게임 밸런스·품질 개선</td><td>Google (Firebase Analytics)</td></tr>
+  <tr><td>앱 오류·충돌 정보 (오류 위치, 기기 상태, OS, Crashlytics 설치 ID)</td><td>오류 수정</td><td>Google (Firebase Crashlytics)</td></tr>
+</table></div>
+<p>게임 이벤트에는 이용자의 이름이나 열차 이름 같은 개인을 알아볼 수 있는 정보를 넣지 않습니다. 개발자는 Google이 제공하는 통계·오류 보고 화면으로만 이 정보를 봅니다.</p>
 
-<h2>7. 방침의 변경</h2>
-<p>이 방침이 바뀌면 이 페이지에 새 시행일과 함께 올립니다.</p>
+<h2>3. 광고</h2>
+<p>게임에는 이용자가 직접 눌러야 나오는 <b>보상형 광고</b>(Google AdMob)가 있습니다. 유럽 경제 지역 등 동의가 필요한 지역에서는 처음에 Google의 동의 화면이 나타나며, 이용자의 선택에 따라 맞춤 광고 또는 비맞춤 광고가 표시됩니다. Android 설정(Google → 광고)에서 광고 ID를 재설정하거나 삭제해 맞춤 광고를 끌 수 있습니다. Google이 정보를 쓰는 방식은 <a href="https://policies.google.com/technologies/partner-sites">파트너 사이트·앱에서 Google이 정보를 사용하는 방법</a>을 참고하세요.</p>
 
-<h2>8. 문의</h2>
-<p>개인정보 관련 문의: <a href="mailto:reo.games.inc@gmail.com">reo.games.inc@gmail.com</a></p>
+<h2>4. 처리 위탁과 국외 이전</h2>
+<p>위 서비스는 모두 <b>Google LLC</b>(미국)와 그 계열사가 제공하며, 정보는 앱을 쓰는 동안 인터넷을 통해 미국 등 Google의 데이터센터가 있는 국가로 전송되어 처리됩니다.</p>
+<div class="tbl"><table>
+  <tr><th>받는 자</th><th>국가</th><th>항목</th><th>목적</th><th>보유 기간</th></tr>
+  <tr><td>Google LLC (AdMob)</td><td>미국 등</td><td>광고 ID, 기기 정보, IP, 광고 기록</td><td>광고 표시·측정</td><td><a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>에 따름</td></tr>
+  <tr><td>Google LLC (Firebase Analytics)</td><td>미국 등</td><td>앱 인스턴스 ID, 기기 정보, 사용 기록</td><td>이용 통계</td><td>Google 애널리틱스 보관 기간 설정(최대 14개월)이 지나면 삭제</td></tr>
+  <tr><td>Google LLC (Firebase Crashlytics)</td><td>미국 등</td><td>오류 정보, 설치 ID</td><td>오류 수정</td><td>수집 후 90일</td></tr>
+  <tr><td>Google LLC (Play 게임즈)</td><td>미국 등</td><td>플레이어 ID·표시 이름, 게임 저장 기록</td><td>로그인·클라우드 저장</td><td>이용자가 Google 계정에서 지울 때까지</td></tr>
+</table></div>
+
+<h2>5. 보유 기간과 파기</h2>
+<ul>
+  <li>기기에 저장된 게임 기록은 앱을 삭제하면 함께 지워집니다.</li>
+  <li>Android 자동 백업이 켜져 있으면 게임 기록이 이용자 본인의 Google 계정 백업에 포함될 수 있습니다. 기기 설정에서 끌 수 있습니다.</li>
+  <li>Google 서비스가 처리하는 정보는 4번 표의 기간 동안 보관된 뒤 삭제됩니다.</li>
+</ul>
+
+<h2>6. 이용자의 권리</h2>
+<ul>
+  <li>광고 ID 재설정·삭제, 맞춤 광고 끄기: Android 설정 → Google → 광고</li>
+  <li>Play 게임즈 클라우드 저장 기록 삭제: Google 계정의 Play 게임즈 설정 또는 Google Drive의 앱 데이터 관리</li>
+  <li>분석·오류 정보의 열람·삭제 요청이나 그 밖의 개인정보 문의는 아래 이메일로 보내 주세요. 게임 설정의 플레이어 ID를 함께 알려 주시면 빠르게 처리할 수 있습니다.</li>
+</ul>
+
+<h2>7. 앱 권한</h2>
+<ul>
+  <li><b>인터넷·네트워크 상태</b>: 광고, 분석, 오류 보고, Play 게임즈 로그인·저장</li>
+  <li><b>광고 ID (AD_ID, Android 광고 서비스)</b>: 광고 표시·측정 (Google 광고·분석 라이브러리가 사용)</li>
+  <li><b>설치 경로 확인 (Install Referrer)</b>: 게임을 어디서 설치했는지 통계 (Firebase Analytics)</li>
+  <li><b>진동</b>: 게임 효과. 게임 설정에서 끌 수 있습니다.</li>
+  <li><b>절전 해제·포그라운드 서비스</b>: 분석·광고 라이브러리가 정보를 안정적으로 보내는 데 사용</li>
+</ul>
+
+<h2>8. 아동</h2>
+<p>게임은 만 13세 미만 아동을 주 대상으로 하지 않으며, 아동의 개인정보를 알면서 수집하지 않습니다. 아동의 정보가 처리된 것을 알게 되면 아래 이메일로 알려 주세요. 지체 없이 삭제를 요청하겠습니다.</p>
+
+<h2>9. 인앱 결제</h2>
+<p>현재 게임에는 실제 결제가 없습니다. 앞으로 Google Play 결제를 넣으면, 그 전에 이 방침을 고칩니다.</p>
+
+<h2>10. 개인정보 보호책임자와 문의</h2>
+<p>개인정보 보호책임자: reo-games · <a href="mailto:reo.games.inc@gmail.com">reo.games.inc@gmail.com</a></p>
+
+<h2>11. 방침의 변경</h2>
+<p>이 방침이 바뀌면 이 페이지에 새 시행일과 함께 올리고, 중요한 변경은 게임 안에서도 알립니다.</p>
 
 <hr>
 
-<h1>Galaxy Train Defenders — Privacy Policy</h1>
-<p class="meta">Effective date: November 5, 2026 · Developer: reo-games</p>
+<h1>Galaxy Train Defense — Privacy Policy</h1>
+<p class="meta">Effective date: November 8, 2026 · Developer: reo-games</p>
 
-<p>This policy explains how the mobile game “Galaxy Train Defenders” (“the Game”, package com.reogames.galaxytrain) by reo-games handles information.</p>
+<p>This policy explains how the mobile game “Galaxy Train Defense” (“the Game”, package com.reogames.galaxytrain) by reo-games (“we”) handles information.</p>
 
-<h2>1. Personal information we collect</h2>
-<p>The Game <b>does not collect personal information</b> such as your name, email, phone number, or location, and <b>does not send any data to the developer’s servers</b>. There is no sign-up or login.</p>
-
-<h2>2. Data stored only on your device</h2>
+<h2>1. Summary</h2>
 <ul>
-  <li><b>Game progress</b>: gold, gems, upgrades, achievements, settings, and train name, stored only in the app’s storage on your device.</li>
-  <li><b>Player ID</b>: a random string generated on your device the first time you open the Game. It is not linked to any personal information and is used only if you share it with us when contacting support.</li>
-</ul>
-<p>Uninstalling the Game deletes this data.</p>
-
-<h2>3. Device backup</h2>
-<p>If Android Auto Backup is enabled, your game progress may be included in your own Google account backup and restored on a new device. Google stores this backup in your account; the developer cannot access it. You can turn backup off in your device settings.</p>
-
-<h2>4. Third-party services</h2>
-<ul>
-  <li><b>Google Fonts</b>: the Game loads fonts from Google Fonts (fonts.googleapis.com, fonts.gstatic.com), which may receive standard connection information such as your IP address. See the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
-</ul>
-<p>The Game currently has <b>no ads and no in-app purchases</b>. If we add advertising (e.g., Google AdMob) or purchases (Google Play Billing), we will update this policy beforehand and notify you in the app.</p>
-
-<h2>5. App permissions</h2>
-<ul>
-  <li><b>Internet</b>: to load fonts.</li>
-  <li><b>Vibration</b>: for haptic effects, which can be turned off in the game settings.</li>
+  <li>The Game <b>does not collect your name, email, phone number, or precise location</b>, and there is no sign-up. We do not run our own servers.</li>
+  <li>Your game progress is stored <b>on your device</b>, and also <b>in your own Google account</b> if you sign in to Google Play Games.</li>
+  <li>We use <b>Google services</b> (AdMob ads, Firebase Analytics, Firebase Crashlytics, and Google Play Games), which process the information listed below, such as device identifiers.</li>
 </ul>
 
-<h2>6. Children</h2>
-<p>Because the Game does not collect personal information, it does not collect personal information from children.</p>
+<h2>2. Information processed and why</h2>
+<div class="tbl"><table>
+  <tr><th>Information</th><th>Purpose</th><th>Processed by</th></tr>
+  <tr><td>Game progress (gold, gems, upgrades, trophies, quests, settings, train name) and a random player ID</td><td>Saving your progress; support (the player ID is used only if you share it with us)</td><td>Your device; your Google account’s game save space if you sign in to Play Games</td></tr>
+  <tr><td>Google Play Games player ID and display name</td><td>Sign-in and cloud save across devices</td><td>Google (Play Games Services)</td></tr>
+  <tr><td>Advertising ID, device and OS information, IP address, ad impressions and clicks</td><td>Showing rewarded ads, measuring ads, preventing fraud (personalized ads only with consent)</td><td>Google (AdMob)</td></tr>
+  <tr><td>App instance ID, device model, OS, language, approximate country (from IP), app usage (installs, opens, session time, and game events such as runs started and finished, unlocks, power-ups, ad rewards and quest rewards)</td><td>Usage statistics and improving balance and quality</td><td>Google (Firebase Analytics)</td></tr>
+  <tr><td>Crash and error information (error location, device state, OS, Crashlytics installation ID)</td><td>Fixing errors</td><td>Google (Firebase Crashlytics)</td></tr>
+</table></div>
+<p>Game events never include information that identifies you, such as your name or train name. We only see this information through Google’s statistics and crash-report dashboards.</p>
 
-<h2>7. Changes</h2>
-<p>If this policy changes, we will post the update on this page with a new effective date.</p>
+<h2>3. Advertising</h2>
+<p>The Game shows <b>rewarded ads</b> (Google AdMob) only when you choose to watch them. In regions where consent is required, such as the European Economic Area, Google’s consent screen appears first, and ads are personalized or non-personalized based on your choice. You can reset or delete your advertising ID in Android settings (Google → Ads) to turn off personalized ads. See <a href="https://policies.google.com/technologies/partner-sites">how Google uses information from sites or apps that use its services</a>.</p>
 
-<h2>8. Contact</h2>
-<p>Privacy questions: <a href="mailto:reo.games.inc@gmail.com">reo.games.inc@gmail.com</a></p>
+<h2>4. Service providers and international transfers</h2>
+<p>All of these services are provided by <b>Google LLC</b> (USA) and its affiliates. Information is sent over the internet while you use the app and processed in the United States and other countries where Google operates data centers.</p>
+<div class="tbl"><table>
+  <tr><th>Recipient</th><th>Country</th><th>Data</th><th>Purpose</th><th>Retention</th></tr>
+  <tr><td>Google LLC (AdMob)</td><td>USA and others</td><td>Advertising ID, device info, IP, ad activity</td><td>Ads and measurement</td><td>Per the <a href="https://policies.google.com/privacy">Google Privacy Policy</a></td></tr>
+  <tr><td>Google LLC (Firebase Analytics)</td><td>USA and others</td><td>App instance ID, device info, usage</td><td>Usage statistics</td><td>Deleted after the Google Analytics retention period (up to 14 months)</td></tr>
+  <tr><td>Google LLC (Firebase Crashlytics)</td><td>USA and others</td><td>Error info, installation ID</td><td>Fixing errors</td><td>90 days</td></tr>
+  <tr><td>Google LLC (Play Games)</td><td>USA and others</td><td>Player ID, display name, saved games</td><td>Sign-in and cloud save</td><td>Until you delete it from your Google account</td></tr>
+</table></div>
+
+<h2>5. Retention and deletion</h2>
+<ul>
+  <li>Game progress on your device is deleted when you uninstall the Game.</li>
+  <li>If Android Auto Backup is on, your progress may be included in your own Google account backup. You can turn backup off in your device settings.</li>
+  <li>Information processed by Google services is kept for the periods in section 4 and then deleted.</li>
+</ul>
+
+<h2>6. Your rights</h2>
+<ul>
+  <li>Reset or delete your advertising ID and turn off personalized ads: Android Settings → Google → Ads</li>
+  <li>Delete Play Games cloud saves: your Google account’s Play Games settings, or manage app data in Google Drive</li>
+  <li>To request access to or deletion of analytics or crash data, or for any other privacy question, email us below. Including the player ID from the Game’s settings helps us respond quickly.</li>
+</ul>
+
+<h2>7. App permissions</h2>
+<ul>
+  <li><b>Internet and network state</b>: ads, analytics, crash reporting, Play Games sign-in and saves</li>
+  <li><b>Advertising ID (AD_ID, Android ad services)</b>: showing and measuring ads (used by Google’s ads and analytics libraries)</li>
+  <li><b>Install Referrer</b>: statistics on where the Game was installed from (Firebase Analytics)</li>
+  <li><b>Vibration</b>: haptic effects, which can be turned off in the game settings</li>
+  <li><b>Wake lock and foreground service</b>: used by analytics and ads libraries to send data reliably</li>
+</ul>
+
+<h2>8. Children</h2>
+<p>The Game is not directed at children under 13, and we do not knowingly collect personal information from children. If you believe a child’s information has been processed, contact us and we will request its deletion promptly.</p>
+
+<h2>9. In-app purchases</h2>
+<p>The Game currently has no real-money purchases. If we add Google Play Billing, we will update this policy beforehand.</p>
+
+<h2>10. Contact</h2>
+<p>Privacy contact: reo-games · <a href="mailto:reo.games.inc@gmail.com">reo.games.inc@gmail.com</a></p>
+
+<h2>11. Changes</h2>
+<p>If this policy changes, we will post the update on this page with a new effective date and announce important changes in the Game.</p>
 </main>
 </body>
 </html>
